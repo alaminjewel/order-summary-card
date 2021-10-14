@@ -1,0 +1,193 @@
+//colors
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue: hsl(245, 75%, 52%);
+$darkBlue: hsl(223, 47%, 23%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: #e1e8ff;
+}
+a{
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+//css starts
+.container{
+    width: 1440px;
+    margin: auto;
+    background: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    //media query
+    @media(max-width: 376px){
+        width: 300px;
+    }
+    .card{
+        margin: 40px 0;
+        width: 30%;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        
+        //media query
+        @media(max-width: 376px){
+            width: 80%;
+        }  
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .heading{
+            width: 300px;
+            text-align: center;
+            padding: 20px 0;
+
+            h1{
+                font-size: 24px;
+                color: $darkBlue;
+                font-weight: 900;
+                padding-bottom: 15px;
+                //media query
+                @media(max-width: 376px){
+                    font-size: 18px;
+                }
+            }
+            p{
+                color: $desaturatedBlue;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 500;
+
+                //media query
+                @media(max-width: 376px){
+                    font-size: 12px;
+                    padding: 0 15px;
+                }
+            }
+        }
+        .plan{
+            width: 300px;
+            background: $veryPaleBlue;
+            padding: 15px;
+            border-radius: 10px;
+            justify-content: space-between; 
+            
+            //media query
+            @media(max-width: 376px){
+                width: 80%;
+                padding: 10px;
+            }
+            
+            .icon{
+                width: 15%;
+                img{
+                }
+            }
+            .content{
+                width: 75%;
+                justify-content: space-between;
+                .txt{
+                    h2{
+                        font-size: 18px;
+                        font-weight: 900;
+                        color:$darkBlue;
+
+                        //media query
+                        @media(max-width: 376px){
+                            font-size: 12px;
+                        }
+                    }
+                    span{
+                        color: $desaturatedBlue;
+                        font-size: 16px;
+                        font-weight: 500;
+                        //media query
+                        @media(max-width: 376px){
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .link{
+                    a{
+                        color: $Brightblue;
+                        font-size: 16px;
+                        font-weight: 700;
+                        transition: all 0.3s ease-in-out;
+                        //media query
+                        @media(max-width: 376px){
+                            font-size: 10px;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .buttons{
+        padding: 25px 0;
+        .btn{
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: $veryPaleBlue;
+            background: $Brightblue;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px 0 $desaturatedBlue;
+            transition: all 0.3s ease-in-out;
+
+            //media query
+            @media(max-width: 376px){
+                font-size: 12px;
+                margin: 0 20px;
+            }
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .link{
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            color: $desaturatedBlue;
+            font-weight: 700;
+            padding: 20px; 
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            
+            //media query
+            @media(max-width: 376px){
+                font-size: 12px;
+            }
+
+            &:hover{
+                color: $darkBlue;
+            } 
+        }
+    }
+}

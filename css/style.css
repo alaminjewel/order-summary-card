@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: #e1e8ff;
+}
+
+a {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+  background: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 376px) {
+  .container {
+    width: 300px;
+  }
+}
+.container .card {
+  margin: 40px 0;
+  width: 30%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 376px) {
+  .container .card {
+    width: 80%;
+  }
+}
+.container .card img {
+  width: 100%;
+  height: auto;
+}
+.container .card .heading {
+  width: 300px;
+  text-align: center;
+  padding: 20px 0;
+}
+.container .card .heading h1 {
+  font-size: 24px;
+  color: #1f2f56;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+@media (max-width: 376px) {
+  .container .card .heading h1 {
+    font-size: 18px;
+  }
+}
+.container .card .heading p {
+  color: #7280a7;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+@media (max-width: 376px) {
+  .container .card .heading p {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}
+.container .card .plan {
+  width: 300px;
+  background: #f5f7ff;
+  padding: 15px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+@media (max-width: 376px) {
+  .container .card .plan {
+    width: 80%;
+    padding: 10px;
+  }
+}
+.container .card .plan .icon {
+  width: 15%;
+}
+.container .card .plan .content {
+  width: 75%;
+  justify-content: space-between;
+}
+.container .card .plan .content .txt h2 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #1f2f56;
+}
+@media (max-width: 376px) {
+  .container .card .plan .content .txt h2 {
+    font-size: 12px;
+  }
+}
+.container .card .plan .content .txt span {
+  color: #7280a7;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 376px) {
+  .container .card .plan .content .txt span {
+    font-size: 12px;
+  }
+}
+.container .card .plan .content .link a {
+  color: #3829e0;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 376px) {
+  .container .card .plan .content .link a {
+    font-size: 10px;
+  }
+}
+.container .card .plan .content .link a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+.container .buttons {
+  padding: 25px 0;
+}
+.container .buttons .btn {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f5f7ff;
+  background: #3829e0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px 0 #7280a7;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 376px) {
+  .container .buttons .btn {
+    font-size: 12px;
+    margin: 0 20px;
+  }
+}
+.container .buttons .btn:hover {
+  opacity: 0.8;
+}
+.container .buttons .link {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #7280a7;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 376px) {
+  .container .buttons .link {
+    font-size: 12px;
+  }
+}
+.container .buttons .link:hover {
+  color: #1f2f56;
+}/*# sourceMappingURL=style.css.map */
